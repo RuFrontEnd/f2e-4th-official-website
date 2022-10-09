@@ -4,6 +4,11 @@
 ## description
 使用 CRA 工具鏈製作。
 
+## tech stack
+- react v18.2.0 (create react app v5.0.1)
+- bootstrap 5
+- aos 2.3.4
+
 ## designer
 [Doris KT Behance](https://www.behance.net/KT_Designer)
 
