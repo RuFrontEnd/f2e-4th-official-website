@@ -22,13 +22,33 @@
   }
 } */
 
+p {
+  margin-bottom: 0px;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin-bottom: 0px;
+}
+
+button {
+  border: none;
+}
+
+:root {
+  --bs-main: rgba(56, 36, 27, 1);
+  --bs-text: rgba(255, 255, 255, 1);
+  --bs-vice: rgba(149, 18, 5, 1);
+}
+
+.container {
+  padding-right: calc(var(--bs-gutter-x));
+  padding-left: calc(var(--bs-gutter-x));
+}
+
 @media (min-width: 1400px) {
   .container {
     max-width: 1280px;
   }
-}
-
-.main-color {
-  color: rgba(56, 36, 27, 1);
-  background-color: rgba(56, 36, 27, 1);
 }
