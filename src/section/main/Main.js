@@ -11,8 +11,8 @@ function Main() {
         <Container fluid className="h-100">
           <Row className="h-100">
             <Col className="h-100">
-              <div className={`${styles.wrapper} h-100 w-100`}>
-                <div className={`${styles.content} w-100 h-100`}>
+              <div className={`${styles.wrapper} h-100`}>
+                <div className={`${styles.content} h-100`}>
                   {/* <div>123</div>
                   <div>123</div>
                   <div>123</div> */}
