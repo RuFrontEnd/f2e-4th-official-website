@@ -8,18 +8,18 @@ function Main() {
   return (
     <>
       <section className={`${styles.main} d-flex align-items-center`}>
-        <Container fluid className="h-100">
+        <Container className="h-100">
           <Row className="h-100">
             <Col className="h-100">
               <div className={`${styles.wrapper} h-100`}>
                 <div className={`${styles.content} h-100`}>
-                  {/* <div>123</div>
-                  <div>123</div>
-                  <div>123</div> */}
+                  <h1>THE F2E</h1>
                   <img
                     src={VHacker}
                     alt={"v-hacker"}
                     className={`${styles["v-hacker"]}`}
+                    width={630}
+                    height={530}
                   ></img>
                 </div>
               </div>

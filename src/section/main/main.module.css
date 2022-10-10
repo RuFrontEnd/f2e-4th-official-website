@@ -1,33 +1,26 @@
 .main {
-  height: calc(100vh - 67px);
+  height: calc(720px - 64px);
   background: no-repeat center url(assets/paper-bg.png);
   background-size: cover;
 }
 
 .wrapper {
-  padding: 40px 10px 20px;
-  box-sizing: border-box;
-  height: calc(100vh - 67px);
+  padding: 40px 0px 20px 0px;
 }
 
 .content {
-  background-color: rgb(237, 213, 168);
-  border-left: 20px solid var(--bs-main);
-  border-right: 20px solid var(--bs-main);
-  border-top: 10px solid var(--bs-main);
-  border-bottom: 10px solid var(--bs-main);
-  padding: 56px 51px;
+  padding: 50px 50px 20px 50px;
+  background: no-repeat center url(assets/mottlement-bg.png);
+  background-size: contain;
   position: relative;
   overflow: hidden;
 }
 
 .v-hacker {
   position: absolute;
-  bottom: -2%;
+  bottom: -15%;
   left: 50%;
   transform: translateX(-50%);
-  height: 100%;
-  padding-top: 5%;
 }
 
 .items {
