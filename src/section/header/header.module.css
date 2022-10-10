@@ -16,4 +16,5 @@
 .sign-up-btn {
   background-color: var(--bs-vice);
   color: var(--bs-text);
+  padding: 6.5px 0px;
 }

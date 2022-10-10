@@ -16,7 +16,11 @@ function Main() {
                   {/* <div>123</div>
                   <div>123</div>
                   <div>123</div> */}
-                  <img src={VHacker} className={`${styles["v-hacker"]}`}></img>
+                  <img
+                    src={VHacker}
+                    alt={"v-hacker"}
+                    className={`${styles["v-hacker"]}`}
+                  ></img>
                 </div>
               </div>
 

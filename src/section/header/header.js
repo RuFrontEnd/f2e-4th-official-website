@@ -10,24 +10,29 @@ function Header() {
       <header className={styles.header}>
         <Container>
           <Row>
-            <Col>
-              <div
-                className={`${styles.wrapper} d-flex justify-content-between align-items-center`}
-              >
+            <Col xs={2}>
+              <div className="d-flex align-items-center h-100">
                 <img src={hexLogo} alt="hex-logo" width="145" height="35"></img>
-                <ul
-                  className={`${styles.items} items d-flex justify-content-end align-items-center`}
+              </div>
+            </Col>
+            <Col xs={6}></Col>
+            <Col xs={1}>
+              <div className={`${styles.item} d-flex align-items-center h-100`}>
+                關卡任務
+              </div>
+            </Col>
+            <Col xs={1}>
+              <div className={`${styles.item} d-flex align-items-center h-100`}>
+                競賽說明
+              </div>
+            </Col>
+            <Col xs={2}>
+              <div className={`${styles.item}`}>
+                <button
+                  className={`${styles["sign-up-btn"]} rounded-pill h-100 w-100`}
                 >
-                  <li className={`${styles.item} ms-4`}>關卡任務</li>
-                  <li className={`${styles.item} ms-4`}>競賽說明</li>
-                  <li className={`${styles.item} ms-4`}>
-                    <button
-                      className={`${styles["sign-up-btn"]} pt-2 pb-2 ps-4 pe-4 rounded-pill`}
-                    >
-                      立即報名
-                    </button>
-                  </li>
-                </ul>
+                  立即報名
+                </button>
               </div>
             </Col>
           </Row>
