@@ -13,7 +13,7 @@ function Main() {
             <Col className="h-100">
               <div className={`${styles.wrapper} h-100`}>
                 <div className={`${styles.content} h-100`}>
-                  <h1>THE F2E</h1>
+                  <h1 className={`${styles.F2E}`}>THE F2E</h1>
                   <img
                     src={VHacker}
                     alt={"v-hacker"}

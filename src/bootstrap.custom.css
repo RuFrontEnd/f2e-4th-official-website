@@ -36,7 +36,11 @@ button {
   border: none;
 }
 
-:root {
+@font-face {
+  font-family: AR JULIAN;
+  src: url(font/ARJULIAN.ttf);
+}
+F :root {
   --bs-main: rgba(56, 36, 27, 1);
   --bs-text: rgba(255, 255, 255, 1);
   --bs-vice: rgba(149, 18, 5, 1);
