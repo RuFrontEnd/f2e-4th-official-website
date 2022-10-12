@@ -2,7 +2,8 @@ import styles from "./main.module.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import VHacker from "assets/v-hacker.svg";
+import vHacker from "assets/v-hacker.svg";
+import bounty from "assets/bounty.svg";
 
 function Main() {
   return (
@@ -11,15 +12,63 @@ function Main() {
         <Container className="h-100">
           <Row className="h-100">
             <Col className="h-100">
-              <div className={`${styles.wrapper} h-100`}>
-                <div className={`${styles.content} h-100`}>
-                  <h1 className={`${styles.F2E}`}>THE F2E</h1>
+              <div className={`${styles["content-container"]} h-100`}>
+                <div className={"h-100 position-relative"}>
+                  <div className={`${styles.content} h-100`}>
+                    <Row className={"h-100"}>
+                      <Col xs={6}>
+                        <h1 className={`${styles.F2E} mb-4`}>THE F2E</h1>
+                        <h2 className={`${styles.copywriting} mb-3`}>
+                          前端工程師和介面
+                          <br />
+                          設計師, 攜手合作
+                          <br />
+                          拿獎金
+                        </h2>
+                        <h3 className={`${styles["vice-copywriting"]}`}>
+                          羨慕別人的酷酷網頁
+                          <br />
+                          動畫？ 滿足不了同事的許
+                          <br />
+                          願？ 動畫技能樹太雜無從
+                          <br />
+                          下手？
+                        </h3>
+                      </Col>
+                      <Col xs={6}>
+                        <div
+                          className={`${styles["num-of-person-wrapper"]} d-flex justify-content-end align-items-center h-100`}
+                        >
+                          <div className={`${styles["num-of-person"]}`}>
+                            <h4>
+                              報名總人數 <span>1854</span>人
+                            </h4>
+                            <h4>
+                              報名總人數 <span>1615</span>人
+                            </h4>
+                            <h4>
+                              報名總人數 <span>92</span>人
+                            </h4>
+                          </div>
+                        </div>
+                      </Col>
+                      <div>
+                        <img
+                          src={vHacker}
+                          alt={"v-hacker"}
+                          className={`${styles["v-hacker"]}`}
+                          width={630}
+                          height={530}
+                        ></img>
+                      </div>
+                    </Row>
+                  </div>
                   <img
-                    src={VHacker}
-                    alt={"v-hacker"}
-                    className={`${styles["v-hacker"]}`}
-                    width={630}
-                    height={530}
+                    src={bounty}
+                    alt={"bounty"}
+                    className={styles.bounty}
+                    width={340}
+                    height={210}
                   ></img>
                 </div>
               </div>

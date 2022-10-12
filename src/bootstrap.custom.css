@@ -40,7 +40,18 @@ button {
   font-family: AR JULIAN;
   src: url(font/ARJULIAN.ttf);
 }
-F :root {
+
+@font-face {
+  font-family: NotoSansTC-Regular;
+  src: url(font/NotoSansTC-Regular.otf);
+}
+
+@font-face {
+  font-family: NotoSerifTC-Black;
+  src: url(font/NotoSerifTC-Black.otf);
+}
+
+:root {
   --bs-main: rgba(56, 36, 27, 1);
   --bs-text: rgba(255, 255, 255, 1);
   --bs-vice: rgba(149, 18, 5, 1);

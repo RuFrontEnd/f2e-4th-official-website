@@ -4,7 +4,7 @@
   background-size: cover;
 }
 
-.wrapper {
+.content-container {
   padding: 40px 0px 20px 0px;
 }
 
@@ -16,28 +16,48 @@
   overflow: hidden;
 }
 
+.copywriting {
+  font-family: NotoSerifTC-Black;
+  color: var(--bs-main);
+  font-size: 42px;
+}
+
+.vice-copywriting {
+  font-family: NotoSansTC-Regular;
+  color: var(--bs-main);
+  font-size: 24px;
+}
+
 .F2E {
   font-family: AR JULIAN;
+  font-size: 80px;
+  color: var(--bs-main);
 }
 
 .v-hacker {
   position: absolute;
-  bottom: -15%;
+  bottom: -1%;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.items {
-  height: 100%;
-  color: var(--bs-text);
+.bounty {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(20px, -20px);
 }
 
-.item {
-  color: var(--bs-text);
-  cursor: pointer;
+.num-of-person-wrapper {
+  color: var(--bs-main);
+  font-size: 28px;
+  font-family: AR JULIAN;
 }
 
-.sign-up-btn {
-  background-color: var(--bs-vice);
-  color: var(--bs-text);
+.num-of-person {
+  width: 60%;
+}
+
+.num-of-person > h4 > span {
+  font-size: 50px;
 }
