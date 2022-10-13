@@ -35,14 +35,12 @@
 }
 
 .v-hacker {
-  position: absolute;
   bottom: -1%;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .bounty {
-  position: absolute;
   top: 0;
   right: 0;
   transform: translate(20px, -20px);
@@ -60,4 +58,65 @@
 
 .num-of-person > h4 > span {
   font-size: 50px;
+}
+
+.bonus {
+  z-index: 100;
+  color: var(--bs-text);
+  font-size: 28px;
+  font-family: AR JULIAN;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.bonus > span {
+  z-index: 100;
+  font-size: 56px;
+  font-family: AR JULIAN;
+  color: var(--bs-vice);
+}
+
+.mouse {
+  right: 51px;
+  bottom: 49px;
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(7px);
+  }
+
+  50% {
+    transform: translateY(21px);
+  }
+
+  100% {
+    transform: translateY(7px);
+  }
+}
+
+@keyframes textScrollDown {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(14px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.mouse-middle-btn {
+  animation: 2s ease-in-out infinite scrollDown;
+  top: 0;
+  left: 50%;
+}
+
+.scroll-down {
+  animation: 2s ease-in-out infinite textScrollDown;
+  font-family: NotoSansTC-Regular;
 }

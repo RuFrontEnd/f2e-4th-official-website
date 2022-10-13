@@ -4,6 +4,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import vHacker from "assets/v-hacker.svg";
 import bounty from "assets/bounty.svg";
+import mouseMiddleBtn from "assets/mouse-middle-button.svg";
+import mouseBody from "assets/mouse-body.svg";
 
 function Main() {
   return (
@@ -52,65 +54,48 @@ function Main() {
                           </div>
                         </div>
                       </Col>
-                      <div>
-                        <img
-                          src={vHacker}
-                          alt={"v-hacker"}
-                          className={`${styles["v-hacker"]}`}
-                          width={630}
-                          height={530}
-                        ></img>
-                      </div>
                     </Row>
+                    <h5
+                      className={`${styles.bonus} position-absolute text-center`}
+                    >
+                      個人獎<span>$3,000</span>&nbsp;&nbsp;團體獎
+                      <span>$10,000</span>
+                    </h5>
+                    <img
+                      src={vHacker}
+                      alt={"v-hacker"}
+                      className={`${styles["v-hacker"]} position-absolute`}
+                      width={630}
+                      height={530}
+                    ></img>
                   </div>
                   <img
                     src={bounty}
                     alt={"bounty"}
-                    className={styles.bounty}
+                    className={`${styles.bounty} position-absolute`}
                     width={340}
                     height={210}
                   ></img>
+                  <div className={`${styles["mouse"]} position-absolute`}>
+                    <div
+                      className={`d-flex flex-column align-items-center`}
+                    >
+                      <img
+                        src={mouseMiddleBtn}
+                        className={`${styles["mouse-middle-btn"]}`}
+                        width={14}
+                        height={14}
+                      ></img>
+                      <img
+                        src={mouseBody}
+                        width={30}
+                        height={44}
+                      ></img>
+                      <p className={`${styles["scroll-down"]}`}>向下滾動</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-
-              {/* <div className="d-flex justify-content-center align-items-center w-100 h-100"> */}
-              {/* <div className={`${styles.wrapper} w-100 h-100`}> */}
-              {/* <div className={`${styles.content} w-100 h-100`}>
-                    123
-                  </div> */}
-              {/* <Row>
-                    <Col>
-                      <Row>
-                        <Col>THE F2E</Col>
-                      </Row>
-                      <Row>
-                        <Col>前端工程師和介面設計師, 攜手合作拿獎金</Col>
-                      </Row>
-                      <Row>
-                        <Col>
-                          羨慕別人的酷酷網頁動畫？ 滿足不了同事的許願？
-                          動畫技能樹太雜無從下手？
-                        </Col>
-                      </Row>
-                    </Col>
-
-                    <Col>
-                      <Row>
-                        <Col>報名總人數 1854人</Col>
-                      </Row>
-                      <Row>
-                        <Col>報名總人數 1615人</Col>
-                      </Row>
-                      <Row>
-                        <Col>報名總人數 92人</Col>
-                      </Row>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col>個人獎$3,000 團體獎$10,000</Col>
-                  </Row> */}
-              {/* </div> */}
-              {/* </div> */}
             </Col>
           </Row>
         </Container>
