@@ -19,7 +19,11 @@ function Main() {
                   <div className={`${styles.content} h-100`}>
                     <Row className={"h-100"}>
                       <Col xs={6}>
-                        <h1 className={`${styles.F2E} mb-4`}>THE F2E</h1>
+                        <h1
+                          className={`${styles.F2E} mb-4 d-flex align-items-center`}
+                        >
+                          THE F2E<div>4th</div>
+                        </h1>
                         <h2 className={`${styles.copywriting} mb-3`}>
                           前端工程師和介面
                           <br />
@@ -77,20 +81,14 @@ function Main() {
                     height={210}
                   ></img>
                   <div className={`${styles["mouse"]} position-absolute`}>
-                    <div
-                      className={`d-flex flex-column align-items-center`}
-                    >
+                    <div className={`d-flex flex-column align-items-center`}>
                       <img
                         src={mouseMiddleBtn}
                         className={`${styles["mouse-middle-btn"]}`}
                         width={14}
                         height={14}
                       ></img>
-                      <img
-                        src={mouseBody}
-                        width={30}
-                        height={44}
-                      ></img>
+                      <img src={mouseBody} width={30} height={44}></img>
                       <p className={`${styles["scroll-down"]}`}>向下滾動</p>
                     </div>
                   </div>
