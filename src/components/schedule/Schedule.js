@@ -9,8 +9,8 @@ import Button from "react-bootstrap/Button";
 function Schedule(props) {
   const _width = props.width ? props.width : 48,
     _height = props.height ? props.height : 48,
-    _leftBorderWith = props.leftBorderWith ? props.leftBorderWith : 0,
-    _rightBorderWith = props.leftBorderWith ? props.leftBorderWith : 0;
+    _leftBorderWith = props.leftBorderWith ? props.leftBorderWith : "0px",
+    _rightBorderWith = props.leftBorderWith ? props.leftBorderWith : "0px";
 
   return (
     <div
@@ -34,12 +34,12 @@ function Schedule(props) {
           }`}
         />
         <div
-          style={{ width: `${_leftBorderWith}px` }}
+          style={{ width: `${_leftBorderWith}` }}
           className={`${styles["left-border"]} position-absolute`}
         ></div>
 
         <div
-          style={{ width: `${_rightBorderWith}px` }}
+          style={{ width: `${_rightBorderWith}` }}
           className={`${styles["right-border"]} position-absolute`}
         ></div>
       </div>
