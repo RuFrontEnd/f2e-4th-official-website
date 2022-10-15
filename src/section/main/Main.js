@@ -11,13 +11,13 @@ function Main() {
   return (
     <>
       <section className={`${styles.main} d-flex align-items-center`}>
-        <Container className="h-100">
-          <Row className="h-100">
-            <Col className="h-100">
-              <div className={`${styles["content-container"]} h-100`}>
-                <div className={"h-100 position-relative"}>
-                  <div className={`${styles.content} h-100`}>
-                    <Row className={"h-100"}>
+        <Container className="">
+          {/* <Row className="">
+            <Col className=""> */}
+          <div className={`${styles["content-container"]}`}>
+            <div className={" position-relative"}>
+              <div className={`${styles.content} `}>
+                {/* <Row className={"h-100"}>
                       <Col xs={6}>
                         <h1
                           className={`${styles.F2E} mb-4 d-flex align-items-center`}
@@ -58,22 +58,22 @@ function Main() {
                           </div>
                         </div>
                       </Col>
-                    </Row>
-                    <h5
+                    </Row> */}
+                {/* <h5
                       className={`${styles.bonus} position-absolute text-center`}
                     >
                       個人獎<span>$3,000</span>&nbsp;&nbsp;團體獎
                       <span>$10,000</span>
-                    </h5>
-                    <img
+                    </h5> */}
+                {/* <img
                       src={vHacker}
                       alt={"v-hacker"}
                       className={`${styles["v-hacker"]} position-absolute`}
                       width={630}
                       height={530}
-                    ></img>
-                  </div>
-                  <img
+                    ></img> */}
+              </div>
+              {/* <img
                     src={bounty}
                     alt={"bounty"}
                     className={`${styles.bounty} position-absolute`}
@@ -91,11 +91,11 @@ function Main() {
                       <img src={mouseBody} width={30} height={44}></img>
                       <p className={`${styles["scroll-down"]}`}>向下滾動</p>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </Col>
-          </Row>
+                  </div> */}
+            </div>
+          </div>
+          {/* </Col>
+          </Row> */}
         </Container>
       </section>
     </>

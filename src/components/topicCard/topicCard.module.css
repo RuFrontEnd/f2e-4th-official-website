@@ -1,0 +1,27 @@
+.topic-card {
+  aspect-ratio: 1 / 0.44;
+  background: no-repeat url(assets/mottlement-card-bg.png);
+  background-size: contain;
+}
+
+.title {
+  color: var(--bs-text);
+  font-size: 44px;
+  font-family: NotoSansTC-Bold;
+}
+
+.items {
+  height: 100%;
+  color: var(--bs-text);
+}
+
+.item {
+  color: var(--bs-text);
+  cursor: pointer;
+}
+
+.sign-up-btn {
+  background-color: var(--bs-vice);
+  color: var(--bs-text);
+  padding: 6.5px 0px;
+}

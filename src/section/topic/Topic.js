@@ -6,6 +6,7 @@ import hexScholl from "assets/hex-school.svg";
 import bounty from "assets/bounty.svg";
 import mouseMiddleBtn from "assets/mouse-middle-button.svg";
 import mouseBody from "assets/mouse-body.svg";
+import TopicCard from "components/topicCard/TopicCard";
 
 function Topic() {
   return (
@@ -30,19 +31,30 @@ function Topic() {
           </Row>
         </Container>
         <Container>
-          <div className={`${styles.divider} `}>
+          <div className={`${styles.divider}`}>
             <hr />
             <hr />
           </div>
         </Container>
-        <Container >
-          <Row>
-            <Col></Col>
-          </Row>
-          <Row>
-            <Col></Col>
-          </Row>
-        </Container>
+        <div className={`${styles.space}`}>
+          <Container>
+            <Row>
+              <Col>
+                <TopicCard className={styles["topic-card"]} />
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <TopicCard className={styles["topic-card"]} />
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <TopicCard className={styles["topic-card"]} />
+              </Col>
+            </Row>
+          </Container>
+        </div>
       </section>
     </>
   );

@@ -1,5 +1,5 @@
 .main {
-  height: calc(720px - 64px);
+  /* height: calc(720px - 64px); */
   background: no-repeat center url(assets/paper-bg.png);
   background-size: cover;
 }
@@ -9,7 +9,9 @@
 }
 
 .content {
-  padding: 50px 50px 20px 50px;
+  /* padding: 50px 50px 20px 50px; */
+  width: 100%;
+  aspect-ratio: 1 / 0.4975;
   background: no-repeat center url(assets/mottlement-bg.png);
   background-size: contain;
   position: relative;
