@@ -1,0 +1,25 @@
+.topic {
+}
+
+.hexSchool {
+  margin-top: 86px;
+  margin-bottom: 42px;
+}
+
+.title {
+  font-size: 43px;
+  font-family: NotoSansTC-Medium;
+  color: var(--bs-main);
+  letter-spacing: 25.8px;
+}
+
+.dividers{
+  margin: 40px 0px;
+}
+
+.dividers > hr {
+  color: var(--bs-main);
+  border-top: 4px solid;
+  opacity: 1;
+  margin: 4.5px 0px;
+}
