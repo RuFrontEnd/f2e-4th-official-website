@@ -14,7 +14,9 @@ function Topic() {
         <Container>
           <Row>
             <Col>
-              <div className={`${styles.hexSchool} d-flex justify-content-center`}>
+              <div
+                className={`${styles.hexSchool} d-flex justify-content-center`}
+              >
                 <img src={hexScholl} width={590} height={146}></img>
               </div>
             </Col>
@@ -27,26 +29,18 @@ function Topic() {
             </Col>
           </Row>
         </Container>
-        <Container fluid>
-          <div className={`${styles.dividers}`}>
+        <Container>
+          <div className={`${styles.divider} `}>
             <hr />
             <hr />
           </div>
         </Container>
-        <Container>
+        <Container >
           <Row>
-            <Col>
-              <div className={`d-flex justify-content-center`}>
-                <img src={hexScholl} width={590} height={146}></img>
-              </div>
-            </Col>
+            <Col></Col>
           </Row>
           <Row>
-            <Col>
-              <div className={`${styles.title} d-flex justify-content-center`}>
-                年度最強合作，三大關卡來襲
-              </div>
-            </Col>
+            <Col></Col>
           </Row>
         </Container>
       </section>

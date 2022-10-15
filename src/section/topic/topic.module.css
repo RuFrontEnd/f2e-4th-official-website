@@ -13,11 +13,11 @@
   letter-spacing: 25.8px;
 }
 
-.dividers{
+.divider {
   margin: 40px 0px;
 }
 
-.dividers > hr {
+.divider > hr {
   color: var(--bs-main);
   border-top: 4px solid;
   opacity: 1;
