@@ -52,48 +52,19 @@ h6 {
   --bs-vice: rgba(149, 18, 5, 1);
 }
 
-.container {
-  padding-right: calc(var(--bs-gutter-x) * 1.66666666667);
-  padding-left: calc(var(--bs-gutter-x) * 1.66666666667);
-}
+$grid-gutter-width: 2.5rem;
 
-.row > * {
-  padding-right: calc(var(--bs-gutter-x) * 0.41666666666);
-  padding-left: calc(var(--bs-gutter-x) * 0.41666666666);
-}
+$grid-breakpoints: (
+  xs: 0,
+  sm: 480px,
+  md: 768px,
+  lg: 1280px,
+);
 
-@media (min-width: 576px) {
-  .container {
-    max-width: 576px;
-  }
-}
+$container-max-widths: (
+  sm: 480px,
+  md: 768px,
+  lg: 1280px,
+);
 
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-/* @media (min-width: 1400px) {
-  .container {
-    max-width: 1320px;
-  }
-} */
+@import "node_modules/bootstrap/scss/bootstrap";

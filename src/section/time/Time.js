@@ -9,7 +9,7 @@ import mouseBody from "assets/mouse-body.svg";
 import Title from "components/title/Title";
 import Schedule from "components/schedule/Schedule";
 
-function Topic() {
+function Time() {
   return (
     <>
       <section className={`${styles.topic}`}>
@@ -70,4 +70,4 @@ function Topic() {
   );
 }
 
-export default Topic;
+export default Time;
