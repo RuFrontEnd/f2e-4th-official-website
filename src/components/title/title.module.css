@@ -1,0 +1,7 @@
+.title {
+  color: var(--bs-text);
+  background-color: var(--bs-main);
+  padding: 42px 0px;
+  font-size: 60px;
+  font-family: NotoSansTC-Black;
+}

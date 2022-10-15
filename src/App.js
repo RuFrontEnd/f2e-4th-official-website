@@ -2,6 +2,7 @@ import styles from "./app.module.css";
 import Header from "section/header/Header";
 import Main from "section/main/Main";
 import Topic from "section/topic/Topic";
+import Time from "section/time/Time";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Main />
       <div className={styles.detail}>
         <Topic />
+        <Time />
       </div>
     </>
   );

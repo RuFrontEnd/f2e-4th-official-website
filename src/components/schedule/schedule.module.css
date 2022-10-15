@@ -1,0 +1,44 @@
+.schedule {
+  display: inline-block;
+}
+
+.mark {
+  margin: 20px 0px 32px;
+}
+
+.placeholder {
+  width: 48px;
+  height: 48px;
+}
+
+.diamond {
+  left: 0;
+  top: 0;
+}
+
+.diamond.red > rect{
+  fill: var(--bs-vice);
+}
+
+.activity {
+  color: var(--bs-main);
+  font-size: 30px;
+  font-family: NotoSansTC-Regular;
+}
+
+.left-border {
+  border-top: 1px solid var(--bs-main);
+  top: 50%;
+  right: 0;
+  transform: translate(-48px, -50%);
+  z-index: 1;
+}
+
+.right-border {
+  border-top: 1px solid var(--bs-main);
+  width: 100px;
+  top: 50%;
+  left: 0;
+  transform: translate(48px, -50%);
+  z-index: 1;
+}
