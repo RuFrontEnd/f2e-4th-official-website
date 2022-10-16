@@ -14,47 +14,33 @@ function Topic() {
       <section className={`${styles.topic}`}>
         <Container>
           <Row>
-            <Col>
+            <Col sm={12} md={6} lg={12}>
               <div
-                className={`${styles.hexSchool} d-flex justify-content-center`}
+                className={`${styles.hexSchool} d-flex flex-column justify-content-center align-items-center`}
               >
                 <img src={hexScholl} width={590} height={146}></img>
+                <div
+                  className={`${styles.title} d-flex justify-content-center`}
+                >
+                  年度最強合作，三大關卡來襲
+                </div>
+                <div className={`${styles.divider} w-100`}>
+                  <hr />
+                  <hr />
+                </div>
               </div>
             </Col>
-          </Row>
-          <Row>
-            <Col>
-              <div className={`${styles.title} d-flex justify-content-center`}>
-                年度最強合作，三大關卡來襲
-              </div>
+            <Col sm={12} md={6} lg={12}>
+              <TopicCard className={styles["topic-card"]} />
+            </Col>
+            <Col sm={12} md={6} lg={12}>
+              <TopicCard className={styles["topic-card"]} />
+            </Col>
+            <Col sm={12} md={6} lg={12}>
+              <TopicCard className={styles["topic-card"]} />
             </Col>
           </Row>
         </Container>
-        <Container>
-          <div className={`${styles.divider}`}>
-            <hr />
-            <hr />
-          </div>
-        </Container>
-        <div className={`${styles.space}`}>
-          <Container>
-            <Row>
-              <Col>
-                <TopicCard className={styles["topic-card"]} />
-              </Col>
-            </Row>
-            <Row>
-              <Col>
-                <TopicCard className={styles["topic-card"]} />
-              </Col>
-            </Row>
-            <Row>
-              <Col>
-                <TopicCard className={styles["topic-card"]} />
-              </Col>
-            </Row>
-          </Container>
-        </div>
       </section>
     </>
   );
