@@ -1,0 +1,36 @@
+@import "breakpoints.scss";
+
+.header {
+  padding: 13.5px 0px;
+  background-color: var(--bs-main);
+}
+
+.hex-logo {
+  display: none;
+}
+
+.items {
+  height: 100%;
+  color: var(--bs-text);
+  font-family: NotoSansTC-Regular;
+}
+
+.item {
+  color: var(--bs-text);
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.sign-up-btn {
+  background-color: var(--bs-vice);
+  color: var(--bs-text);
+  padding: 6.5px 25px;
+  font-size: 20px;
+  font-family: NotoSansTC-Regular;
+}
+
+@media screen and (min-width: $md) {
+  .sign-up-btn {
+    padding: 6.5px 51.5px;
+  }
+}

@@ -1,18 +1,19 @@
+@import "breakpoints.scss";
+
 .main {
-  /* height: calc(720px - 64px); */
-  background: no-repeat center url(assets/paper-bg.png);
+  background: no-repeat center url(/assets/paper-bg.png);
   background-size: cover;
 }
 
 .content-container {
-  padding: 40px 0px 20px 0px;
+  padding: 14px 0px 0px 0px;
 }
 
 .content {
-  /* padding: 50px 50px 20px 50px; */
-  width: 100%;
-  aspect-ratio: 1 / 0.4975;
-  background: no-repeat center url(assets/mottlement-bg.png);
+  aspect-ratio: 1 / 2.304;
+  background-image: url(/assets/mottlement-bg-sm.png);
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: contain;
   position: relative;
   overflow: hidden;
@@ -131,4 +132,26 @@
 .scroll-down {
   animation: 2s ease-in-out infinite textScrollDown;
   font-family: NotoSansTC-Regular;
+}
+
+@media screen and (min-width: $md) {
+  .content-container {
+    padding: 28px 0px 32px 0px;
+  }
+
+  .content {
+    background-image: url(/assets/mottlement-bg-md.png);
+    aspect-ratio: 1 / 1.22554347826;
+  }
+}
+
+@media screen and (min-width: $lg) {
+  .content-container {
+    padding: 40px 0px 20px 0px;
+  }
+
+  .content {
+    background-image: url(/assets/mottlement-bg-lg.png);
+    aspect-ratio: 1 / 0.4975;
+  }
 }
