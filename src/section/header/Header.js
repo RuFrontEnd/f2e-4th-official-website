@@ -15,7 +15,7 @@ function Header() {
                 <img src={hexLogo} alt="hex-logo" width="145" height="35"></img>
               </div>
             </Col>
-            <Col xs={6}></Col>
+            <Col xs={6} />
             <Col xs={1}>
               <div className={`${styles.item} d-flex align-items-center h-100`}>
                 關卡任務
