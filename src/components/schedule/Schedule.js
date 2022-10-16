@@ -14,6 +14,7 @@ function Schedule(props) {
 
   return (
     <div
+      style={props.style}
       className={`${styles.schedule} ${props.className} d-inline-flex flex-column align-items-center`}
     >
       <p className={`${styles.activity}`}>{props.activity}</p>

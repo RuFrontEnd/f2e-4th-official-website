@@ -14,50 +14,85 @@ function Time() {
     <>
       <section className={`${styles.topic}`}>
         <Title title="賽程時間" />
-        <Container>
+
+        <Container className="d-lg-block d-none">
           <Row>
-            <Col xs={3}>
+            <Col lg={3}>
               <Schedule activity={"開始報名"} red>
                 10/13(四) 早上 11:00
                 <br /> 至 11/6(日) 晚上 23:59
               </Schedule>
             </Col>
-            <Col xs={3}>
+            <Col lg={3}>
               <Schedule activity={"開始報名"} red>
                 10/13(四) 早上 11:00
                 <br /> 至 11/6(日) 晚上 23:59
               </Schedule>
             </Col>
-            <Col xs={3}>
+            <Col lg={3}>
               <Schedule activity={"開始報名"} red>
                 10/13(四) 早上 11:00
                 <br /> 至 11/6(日) 晚上 23:59
               </Schedule>
             </Col>
-            <Col xs={3}>
+            <Col lg={3}>
               <Schedule activity={"開始報名"} red>
                 10/13(四) 早上 11:00
                 <br /> 至 11/6(日) 晚上 23:59
               </Schedule>
             </Col>
-          </Row>
-          <Row>
-            <Col xs={3}></Col>
-            <Col xs={3}>
+            <Col lg={3}></Col>
+            <Col lg={3}>
               <Schedule activity={"開始報名"} red>
                 10/13(四) 早上 11:00
                 <br /> 至 11/6(日) 晚上 23:59
               </Schedule>
             </Col>
-            <Col xs={3}>
+            <Col lg={3}>
               <Schedule activity={"開始報名"} red>
                 10/13(四) 早上 11:00
                 <br /> 至 11/6(日) 晚上 23:59
               </Schedule>
             </Col>
-            <Col xs={3}></Col>
+            <Col lg={3}></Col>
           </Row>
         </Container>
+        <div
+          className={`${styles.schedules} overflow-x-scroll d-flex d-lg-none`}
+        >
+          <Schedule activity={"開始報名"} red style={{ flex: "0 0 500px" }}>
+            10/13(四) 早上 11:00
+            <br /> 至 11/6(日) 晚上 23:59
+          </Schedule>
+          <Schedule activity={"開始報名"} red style={{ flex: "0 0 500px" }}>
+            10/13(四) 早上 11:00
+            <br /> 至 11/6(日) 晚上 23:59
+          </Schedule>
+          <Schedule activity={"開始報名"} red style={{ flex: "0 0 500px" }}>
+            10/13(四) 早上 11:00
+            <br /> 至 11/6(日) 晚上 23:59
+          </Schedule>
+          <Schedule activity={"開始報名"} red style={{ flex: "0 0 500px" }}>
+            10/13(四) 早上 11:00
+            <br /> 至 11/6(日) 晚上 23:59
+          </Schedule>
+          <Schedule activity={"開始報名"} red style={{ flex: "0 0 500px" }}>
+            10/13(四) 早上 11:00
+            <br /> 至 11/6(日) 晚上 23:59
+          </Schedule>
+          <Schedule activity={"開始報名"} red style={{ flex: "0 0 500px" }}>
+            10/13(四) 早上 11:00
+            <br /> 至 11/6(日) 晚上 23:59
+          </Schedule>
+          <Schedule activity={"開始報名"} red style={{ flex: "0 0 500px" }}>
+            10/13(四) 早上 11:00
+            <br /> 至 11/6(日) 晚上 23:59
+          </Schedule>
+          <Schedule activity={"開始報名"} red style={{ flex: "0 0 500px" }}>
+            10/13(四) 早上 11:00
+            <br /> 至 11/6(日) 晚上 23:59
+          </Schedule>
+        </div>
         <Container>
           初選：將由六角學院前端、UI 評審進行第一波篩選，並於
           12/5（五）公布初選佳作名單 。
