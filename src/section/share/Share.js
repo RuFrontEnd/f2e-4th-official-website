@@ -16,16 +16,16 @@ function Share() {
         <Title title="各界大神直播分享" />
         <Container>
           <Row>
-            <Col xs={4} md={6} lg={6}>
+            <Col xs={12} md={6} lg={6}>
               <div className={`${styles.sharer}`}>1</div>
             </Col>
-            <Col xs={4} md={6} lg={6}>
+            <Col xs={12} md={6} lg={6}>
               <div className={`${styles.sharer}`}>2</div>
             </Col>
-            <Col xs={4} md={6} lg={6}>
+            <Col xs={12} md={6} lg={6}>
               <div className={`${styles.sharer}`}>3</div>
             </Col>
-            <Col xs={4} md={6} lg={6}>
+            <Col xs={12} md={6} lg={6}>
               <div className={`${styles.sharer}`}>4</div>
             </Col>
           </Row>
