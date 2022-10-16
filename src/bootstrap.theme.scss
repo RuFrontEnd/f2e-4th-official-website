@@ -1,0 +1,74 @@
+@import "./breakpoints.scss";
+
+p {
+  margin-bottom: 0px;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin-bottom: 0px;
+}
+
+button {
+  border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0px;
+}
+
+@font-face {
+  font-family: AR JULIAN;
+  src: url(font/ARJULIAN.ttf);
+}
+
+@font-face {
+  font-family: NotoSansTC-Regular;
+  src: url(font/NotoSansTC-Regular.otf);
+}
+
+@font-face {
+  font-family: NotoSansTC-Medium;
+  src: url(font/NotoSansTC-Medium.otf);
+}
+
+@font-face {
+  font-family: NotoSansTC-Bold;
+  src: url(font/NotoSansTC-Bold.otf);
+}
+
+@font-face {
+  font-family: NotoSerifTC-Black;
+  src: url(font/NotoSerifTC-Black.otf);
+}
+
+:root {
+  --bs-main: rgba(56, 36, 27, 1);
+  --bs-text: rgba(255, 255, 255, 1);
+  --bs-vice: rgba(149, 18, 5, 1);
+}
+
+.container {
+  padding-right: calc(var(--bs-gutter-x) * 0);
+  padding-left: calc(var(--bs-gutter-x) * 0);
+}
+
+@media screen and (min-width: $md) {
+  .container {
+    padding-right: calc(var(--bs-gutter-x) * 0.4);
+    padding-left: calc(var(--bs-gutter-x) * 0.4);
+  }
+}
+
+@media screen and (min-width: $lg) {
+  .container {
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+  }
+}
