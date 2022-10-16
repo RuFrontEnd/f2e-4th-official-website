@@ -60,35 +60,35 @@ function Time() {
         <div
           className={`${styles.schedules} overflow-x-scroll d-flex d-lg-none`}
         >
-          <Schedule activity={"開始報名"} red style={{ flex: "0 0 500px" }}>
+          <Schedule activity={"開始報名"} red className={styles.schedule}>
             10/13(四) 早上 11:00
             <br /> 至 11/6(日) 晚上 23:59
           </Schedule>
-          <Schedule activity={"開始報名"} red style={{ flex: "0 0 500px" }}>
+          <Schedule activity={"開始報名"} red className={styles.schedule}>
             10/13(四) 早上 11:00
             <br /> 至 11/6(日) 晚上 23:59
           </Schedule>
-          <Schedule activity={"開始報名"} red style={{ flex: "0 0 500px" }}>
+          <Schedule activity={"開始報名"} red className={styles.schedule}>
             10/13(四) 早上 11:00
             <br /> 至 11/6(日) 晚上 23:59
           </Schedule>
-          <Schedule activity={"開始報名"} red style={{ flex: "0 0 500px" }}>
+          <Schedule activity={"開始報名"} red className={styles.schedule}>
             10/13(四) 早上 11:00
             <br /> 至 11/6(日) 晚上 23:59
           </Schedule>
-          <Schedule activity={"開始報名"} red style={{ flex: "0 0 500px" }}>
+          <Schedule activity={"開始報名"} red className={styles.schedule}>
             10/13(四) 早上 11:00
             <br /> 至 11/6(日) 晚上 23:59
           </Schedule>
-          <Schedule activity={"開始報名"} red style={{ flex: "0 0 500px" }}>
+          <Schedule activity={"開始報名"} red className={styles.schedule}>
             10/13(四) 早上 11:00
             <br /> 至 11/6(日) 晚上 23:59
           </Schedule>
-          <Schedule activity={"開始報名"} red style={{ flex: "0 0 500px" }}>
+          <Schedule activity={"開始報名"} red className={styles.schedule}>
             10/13(四) 早上 11:00
             <br /> 至 11/6(日) 晚上 23:59
           </Schedule>
-          <Schedule activity={"開始報名"} red style={{ flex: "0 0 500px" }}>
+          <Schedule activity={"開始報名"} red className={styles.schedule}>
             10/13(四) 早上 11:00
             <br /> 至 11/6(日) 晚上 23:59
           </Schedule>

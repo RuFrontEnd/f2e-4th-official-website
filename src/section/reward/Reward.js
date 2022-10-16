@@ -16,7 +16,7 @@ function Reward() {
         <Title title="獎項" />
         <Container>
           <Row>
-            <Col xs={4} md={6} lg={4}>
+            <Col xs={12} md={6} lg={4}>
               <img
                 className={`${styles["medal"]} w-100`}
                 width={386}
@@ -24,7 +24,7 @@ function Reward() {
               ></img>
               每個關卡各 2 名， 設計 1 名、前端 1 名
             </Col>
-            <Col xs={4} md={6} lg={4}>
+            <Col xs={12} md={6} lg={4}>
               <img
                 className={`${styles["medal"]} w-100`}
                 width={386}
@@ -32,22 +32,18 @@ function Reward() {
               ></img>
               每個關卡各 2 名， 設計 1 名、前端 1 名
             </Col>
-            <Col xs={4} md={6} lg={4}>
+            <Col xs={12} md={6} lg={4}>
               <img
                 className={`${styles["medal"]} w-100`}
                 width={386}
                 height={374}
               ></img>
               每個關卡各 2 名， 設計 1 名、前端 1 名
+            </Col>
+            <Col xs={12} md={6} lg={12}>
+              以上皆提供完賽數位獎狀
             </Col>
           </Row>
-        </Container>
-        <Container>
-          初選：將由六角學院前端、UI 評審進行第一波篩選，並於
-          12/5（五）公布初選佳作名單 。
-          <br />
-          決選：由三大企業針對該企業主題進行入圍獎最後篩選，並於
-          12/23（五）公布企業得獎名單。
         </Container>
       </section>
     </>
