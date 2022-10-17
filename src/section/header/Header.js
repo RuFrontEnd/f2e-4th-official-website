@@ -4,6 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import hexLogo from "assets/hex-logo.png";
 import { ReactComponent as Menu } from "assets/menu.svg";
+import Button from "components/button/Button";
 
 function Header() {
   return (
@@ -40,11 +41,11 @@ function Header() {
                   </li>
 
                   <li className={`${styles.item}`}>
-                    <button
-                      className={`${styles["sign-up-btn"]} rounded-pill h-100`}
+                    <Button
+                      className={`${styles["sign-up-btn"]} h-100`}
                     >
                       立即報名
-                    </button>
+                    </Button>
                   </li>
                 </ul>
               </div>

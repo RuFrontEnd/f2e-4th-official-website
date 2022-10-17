@@ -5,7 +5,6 @@
   background-color: var(--bs-main);
 }
 
-
 .items {
   height: 100%;
   color: var(--bs-text);
@@ -19,11 +18,7 @@
 }
 
 .sign-up-btn {
-  background-color: var(--bs-vice);
-  color: var(--bs-text);
   padding: 6.5px 25px;
-  font-size: 20px;
-  font-family: NotoSansTC-Regular;
 }
 
 @media screen and (min-width: $md) {

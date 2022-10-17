@@ -1,20 +1,22 @@
 .topic {
+  padding-top: 86px;
+  padding-bottom: 133px;
 }
 
-.hexSchool {
-  margin-top: 86px;
+.hex-scholl {
   margin-bottom: 42px;
 }
 
-.title {
+.copyWriting {
   font-size: 43px;
   font-family: NotoSansTC-Medium;
   color: var(--bs-main);
   letter-spacing: 25.8px;
+  margin-bottom: 42px;
 }
 
 .divider {
-  margin: 40px 0px;
+  margin-bottom: 100px;
 }
 
 .divider > hr {
@@ -29,5 +31,5 @@
 }
 
 .topic-card {
-  margin: 21px 0px;
+  margin-bottom: 42px;
 }

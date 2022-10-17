@@ -1,0 +1,15 @@
+@import "breakpoints.scss";
+
+.btn {
+  background-color: var(--bs-vice);
+  color: var(--bs-text);
+  padding: 6.5px 25px;
+  font-size: 20px;
+  font-family: NotoSansTC-Regular;
+}
+
+.btn.secondary {
+  background: none;
+  color: var(--bs-main);
+  border: 2px solid var(--bs-main);
+}

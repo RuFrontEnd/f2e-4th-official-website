@@ -16,11 +16,11 @@ function Topic() {
           <Row>
             <Col sm={12} md={6} lg={12}>
               <div
-                className={`${styles.hexSchool} d-flex flex-column justify-content-center align-items-center`}
+                className={`d-flex flex-column justify-content-center align-items-center`}
               >
-                <img src={hexScholl} width={590} height={146}></img>
+                <img src={hexScholl} width={590} height={146} className={styles['hex-scholl']}></img>
                 <div
-                  className={`${styles.title} d-flex justify-content-center`}
+                  className={`${styles.copyWriting} d-flex justify-content-center`}
                 >
                   年度最強合作，三大關卡來襲
                 </div>
