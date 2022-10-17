@@ -15,12 +15,14 @@ function Main() {
           <Row>
             <Col>
               <div className={`${styles["content-container"]}`}>
-                <div className={" position-relative"}>
-                  <div className={`${styles.content} `}>
-                    {/* <Row className={"h-100"}>
-                      <Col xs={6}>
+                <div className={"position-relative"}>
+                  <div className={`${styles.content}`}>
+                    <div
+                      className={`${styles.copywritings} h-100 d-flex justify-content-between`}
+                    >
+                      <div>
                         <h1
-                          className={`${styles.F2E} mb-4 d-flex align-items-center`}
+                          className={`${styles.F2E} d-flex align-items-center`}
                         >
                           THE F2E<div>4th</div>
                         </h1>
@@ -32,48 +34,46 @@ function Main() {
                           拿獎金
                         </h2>
                         <h3 className={`${styles["vice-copywriting"]}`}>
-                          羨慕別人的酷酷網頁
+                          羨慕別人的酷酷網頁動
                           <br />
-                          動畫？ 滿足不了同事的許
+                          畫？ 滿足不了同事的許
                           <br />
                           願？ 動畫技能樹太雜無從
                           <br />
                           下手？
                         </h3>
-                      </Col>
-                      <Col xs={6}>
-                        <div
-                          className={`${styles["num-of-person-wrapper"]} d-flex justify-content-end align-items-center h-100`}
-                        >
-                          <div className={`${styles["num-of-person"]}`}>
-                            <h4>
-                              報名總人數 <span>1854</span>人
-                            </h4>
-                            <h4>
-                              報名總人數 <span>1615</span>人
-                            </h4>
-                            <h4>
-                              報名總人數 <span>92</span>人
-                            </h4>
-                          </div>
+                      </div>
+                      <div
+                        className={`${styles["num-of-person-wrapper"]} d-flex justify-content-end align-items-center h-100`}
+                      >
+                        <div className={`${styles["num-of-person"]}`}>
+                          <h4>
+                            報名總人數 <span>1854</span>人
+                          </h4>
+                          <h4>
+                            報名總人數 <span>1615</span>人
+                          </h4>
+                          <h4>
+                            報名總人數 <span>92</span>人
+                          </h4>
                         </div>
-                      </Col>
-                    </Row> */}
-                    {/* <h5
+                      </div>
+                    </div>
+                    <h5
                       className={`${styles.bonus} position-absolute text-center`}
                     >
                       個人獎<span>$3,000</span>&nbsp;&nbsp;團體獎
                       <span>$10,000</span>
-                    </h5> */}
-                    {/* <img
+                    </h5>
+                    <img
                       src={vHacker}
                       alt={"v-hacker"}
                       className={`${styles["v-hacker"]} position-absolute`}
                       width={630}
                       height={530}
-                    ></img> */}
+                    ></img>
                   </div>
-                  {/* <img
+                  <img
                     src={bounty}
                     alt={"bounty"}
                     className={`${styles.bounty} position-absolute`}
@@ -91,7 +91,7 @@ function Main() {
                       <img src={mouseBody} width={30} height={44}></img>
                       <p className={`${styles["scroll-down"]}`}>向下滾動</p>
                     </div>
-                  </div> */}
+                  </div>
                 </div>
               </div>
             </Col>
