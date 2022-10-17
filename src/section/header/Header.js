@@ -16,10 +16,10 @@ function Header() {
                 className={`${styles["header-items"]} d-flex justify-content-between`}
               >
                 <div className="d-flex align-items-center h-100">
-                  <Menu />
+                  <Menu className="d-md-none" />
                   <img
                     src={hexLogo}
-                    className={styles["hex-logo"]}
+                    className={`${styles["hex-logo"]} d-md-block d-none`}
                     alt="hex-logo"
                     width="145"
                     height="35"
