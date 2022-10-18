@@ -15,6 +15,7 @@
   left: 50%;
   top: 0;
   transform: translateX(-50%);
+  z-index: 2;
 }
 
 .diamond.red > rect {
@@ -31,7 +32,6 @@
   border-top: 1px solid var(--bs-main);
   top: 50%;
   right: 50%;
-  /* transform: translate(-48px, -50%); */
   z-index: 1;
 }
 
@@ -40,6 +40,5 @@
   width: 100px;
   top: 50%;
   left: 50%;
-  /* transform: translate(48px, -50%); */
   z-index: 1;
 }
