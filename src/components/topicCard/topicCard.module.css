@@ -5,11 +5,18 @@
   padding: 20px 29px 19px 39px;
 }
 
+.top-content {
+  height: 70px;
+}
+
 .title {
   color: var(--bs-text);
   font-size: 44px;
   font-family: NotoSansTC-Bold;
   line-height: 63.71px;
+}
+
+.company-img {
 }
 
 .content {
