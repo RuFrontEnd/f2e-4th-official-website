@@ -7,10 +7,9 @@ import { ReactComponent as Diamond } from "assets/diamond.svg";
 import Button from "react-bootstrap/Button";
 
 function Schedule(props) {
-  const _width = props.width ? props.width : 48,
-    _height = props.height ? props.height : 48,
-    _leftBorderWith = props.leftBorderWith ? props.leftBorderWith : "0px",
-    _rightBorderWith = props.leftBorderWith ? props.leftBorderWith : "0px";
+  const length = props.length ? props.length : 48,
+    _leftBorderWith = props.leftBorderWith ? props.leftBorderWith : 0,
+    _rightBorderWith = props.rightBorderWith ? props.rightBorderWith : 0;
 
   return (
     <div
@@ -18,29 +17,29 @@ function Schedule(props) {
       className={`${styles.schedule} ${props.className} d-inline-flex flex-column align-items-center`}
     >
       <p className={`${styles.activity}`}>{props.activity}</p>
-      <div className={`${styles.mark} position-relative`}>
+      <div className={`${styles.mark} position-relative w-100 `}>
         <div
           style={{
-            width: _width,
-            height: _height,
+            width: `${length}px`,
+            height: `${length}px`,
           }}
           className={`${styles.placeholder}`}
         ></div>
 
         <Diamond
-          width={_width}
-          height={_height}
+          width={length}
+          height={length}
           className={`${styles.diamond} position-absolute ${
             props.red && styles.red
           }`}
         />
         <div
-          style={{ width: `${_leftBorderWith}` }}
+          style={{ width: `calc(${_leftBorderWith}% - 50%)` }}
           className={`${styles["left-border"]} position-absolute`}
         ></div>
 
         <div
-          style={{ width: `${_rightBorderWith}` }}
+          style={{ width: `calc(${_rightBorderWith}% - 50%)` }}
           className={`${styles["right-border"]} position-absolute`}
         ></div>
       </div>

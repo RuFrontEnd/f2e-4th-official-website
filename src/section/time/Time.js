@@ -9,91 +9,46 @@ import mouseBody from "assets/mouse-body.svg";
 import Title from "components/title/Title";
 import Schedule from "components/schedule/Schedule";
 
+// overflow-x-scroll
+
 function Time() {
   return (
     <>
       <section className={`${styles.topic}`}>
         <Title title="賽程時間" />
-
-        <Container className="d-lg-block d-none">
-          <Row>
-            <Col lg={3}>
-              <Schedule activity={"開始報名"} red>
-                10/13(四) 早上 11:00
-                <br /> 至 11/6(日) 晚上 23:59
-              </Schedule>
-            </Col>
-            <Col lg={3}>
-              <Schedule activity={"開始報名"} red>
-                10/13(四) 早上 11:00
-                <br /> 至 11/6(日) 晚上 23:59
-              </Schedule>
-            </Col>
-            <Col lg={3}>
-              <Schedule activity={"開始報名"} red>
-                10/13(四) 早上 11:00
-                <br /> 至 11/6(日) 晚上 23:59
-              </Schedule>
-            </Col>
-            <Col lg={3}>
-              <Schedule activity={"開始報名"} red>
-                10/13(四) 早上 11:00
-                <br /> 至 11/6(日) 晚上 23:59
-              </Schedule>
-            </Col>
-            <Col lg={3}></Col>
-            <Col lg={3}>
-              <Schedule activity={"開始報名"} red>
-                10/13(四) 早上 11:00
-                <br /> 至 11/6(日) 晚上 23:59
-              </Schedule>
-            </Col>
-            <Col lg={3}>
-              <Schedule activity={"開始報名"} red>
-                10/13(四) 早上 11:00
-                <br /> 至 11/6(日) 晚上 23:59
-              </Schedule>
-            </Col>
-            <Col lg={3}></Col>
-          </Row>
-        </Container>
-        <div
-          className={`${styles.schedules} overflow-x-scroll d-flex d-lg-none`}
-        >
-          <Schedule activity={"開始報名"} red className={styles.schedule}>
-            10/13(四) 早上 11:00
-            <br /> 至 11/6(日) 晚上 23:59
-          </Schedule>
-          <Schedule activity={"開始報名"} red className={styles.schedule}>
-            10/13(四) 早上 11:00
-            <br /> 至 11/6(日) 晚上 23:59
-          </Schedule>
-          <Schedule activity={"開始報名"} red className={styles.schedule}>
-            10/13(四) 早上 11:00
-            <br /> 至 11/6(日) 晚上 23:59
-          </Schedule>
-          <Schedule activity={"開始報名"} red className={styles.schedule}>
-            10/13(四) 早上 11:00
-            <br /> 至 11/6(日) 晚上 23:59
-          </Schedule>
-          <Schedule activity={"開始報名"} red className={styles.schedule}>
-            10/13(四) 早上 11:00
-            <br /> 至 11/6(日) 晚上 23:59
-          </Schedule>
-          <Schedule activity={"開始報名"} red className={styles.schedule}>
-            10/13(四) 早上 11:00
-            <br /> 至 11/6(日) 晚上 23:59
-          </Schedule>
-          <Schedule activity={"開始報名"} red className={styles.schedule}>
-            10/13(四) 早上 11:00
-            <br /> 至 11/6(日) 晚上 23:59
-          </Schedule>
-          <Schedule activity={"開始報名"} red className={styles.schedule}>
-            10/13(四) 早上 11:00
-            <br /> 至 11/6(日) 晚上 23:59
-          </Schedule>
-        </div>
         <Container>
+          <div className={`${styles.schedules} d-flex justify-content-center`}>
+            <Schedule
+              activity={"開始報名"}
+              red
+              className={styles.schedule}
+              rightBorderWith={100}
+              leftBorderWith={100}
+            >
+              10/13(四) 早上 11:00
+              <br /> 至 11/6(日) 晚上 23:59
+            </Schedule>
+            <Schedule activity={"開始報名"} className={styles.schedule}>
+              10/13(四) 早上 11:00
+              <br /> 至 11/6(日) 晚上 23:59
+            </Schedule>
+            <Schedule activity={"開始報名"} className={styles.schedule}>
+              10/13(四) 早上 11:00
+              <br /> 至 11/6(日) 晚上 23:59
+            </Schedule>
+            <Schedule activity={"開始報名"} className={styles.schedule}>
+              10/13(四) 早上 11:00
+              <br /> 至 11/6(日) 晚上 23:59
+            </Schedule>
+            <Schedule activity={"開始報名"} className={styles.schedule}>
+              10/13(四) 早上 11:00
+              <br /> 至 11/6(日) 晚上 23:59
+            </Schedule>
+            <Schedule activity={"開始報名"} className={styles.schedule}>
+              10/13(四) 早上 11:00
+              <br /> 至 11/6(日) 晚上 23:59
+            </Schedule>
+          </div>
           初選：將由六角學院前端、UI 評審進行第一波篩選，並於
           12/5（五）公布初選佳作名單 。
           <br />

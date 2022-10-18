@@ -2,5 +2,9 @@
 }
 
 .schedules {
-  flex: 0 0 500px;
+  flex-wrap: wrap;
+}
+
+.schedule {
+  flex: 0 0 300px;
 }
