@@ -43,7 +43,7 @@ function Schedule(props) {
           className={`${styles["right-border"]} position-absolute`}
         ></div>
       </div>
-      <p>{props.children}</p>
+      <p className={styles.content}>{props.children}</p>
     </div>
   );
 }

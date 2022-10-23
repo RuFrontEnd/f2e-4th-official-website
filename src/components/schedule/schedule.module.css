@@ -29,16 +29,24 @@
 }
 
 .left-border {
-  border-top: 1px solid var(--bs-main);
+  border-top: 5px solid var(--bs-main);
   top: 50%;
   right: 50%;
+  transform: translateY(-50%);
   z-index: 1;
 }
 
 .right-border {
-  border-top: 1px solid var(--bs-main);
+  border-top: 5px solid var(--bs-main);
   width: 100px;
   top: 50%;
   left: 50%;
+  transform: translateY(-50%);
   z-index: 1;
+}
+
+.content {
+  font-family: NotoSansTC-Regular;
+  line-height: 34.75px;
+  font-size: 24px;
 }

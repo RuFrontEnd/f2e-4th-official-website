@@ -23,30 +23,48 @@ function Time() {
               red
               className={styles.schedule}
               rightBorderWith={100}
-              leftBorderWith={100}
             >
               10/13(四) 早上 11:00
               <br /> 至 11/6(日) 晚上 23:59
             </Schedule>
-            <Schedule activity={"開始報名"} className={styles.schedule}>
-              10/13(四) 早上 11:00
-              <br /> 至 11/6(日) 晚上 23:59
+            <Schedule
+              activity={"開賽"}
+              className={styles.schedule}
+              rightBorderWith={100}
+              leftBorderWith={100}
+            >
+              UI組、團體組開賽 10/31
+              <br /> 前端組開賽 11 /7
             </Schedule>
-            <Schedule activity={"開始報名"} className={styles.schedule}>
-              10/13(四) 早上 11:00
-              <br /> 至 11/6(日) 晚上 23:59
+            <Schedule
+              activity={"登陸作品"}
+              className={styles.schedule}
+              rightBorderWith={100}
+              leftBorderWith={100}
+            >
+              10/31(一) 中午 12:00
+              <br /> 至11/28(一) 中午 12:00
             </Schedule>
-            <Schedule activity={"開始報名"} className={styles.schedule}>
-              10/13(四) 早上 11:00
-              <br /> 至 11/6(日) 晚上 23:59
+            <Schedule
+              activity={"線上直播"}
+              className={styles.schedule}
+              leftBorderWith={100}
+            >
+              11/3 至 11/24(每週四)
             </Schedule>
-            <Schedule activity={"開始報名"} className={styles.schedule}>
-              10/13(四) 早上 11:00
-              <br /> 至 11/6(日) 晚上 23:59
+            <Schedule
+              activity={"初選"}
+              className={styles.schedule}
+              rightBorderWith={100}
+            >
+              12/05(五)
             </Schedule>
-            <Schedule activity={"開始報名"} className={styles.schedule}>
-              10/13(四) 早上 11:00
-              <br /> 至 11/6(日) 晚上 23:59
+            <Schedule
+              activity={"決選"}
+              className={styles.schedule}
+              leftBorderWith={100}
+            >
+              12/05(五)
             </Schedule>
           </div>
           初選：將由六角學院前端、UI 評審進行第一波篩選，並於

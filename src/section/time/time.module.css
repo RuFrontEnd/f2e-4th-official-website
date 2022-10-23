@@ -3,8 +3,10 @@
 
 .schedules {
   flex-wrap: wrap;
+  margin-top: 46px;
 }
 
 .schedule {
   flex: 0 0 300px;
+  margin: 46px 0px;
 }
