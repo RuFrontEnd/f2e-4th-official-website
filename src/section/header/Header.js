@@ -9,7 +9,7 @@ import Button from "components/button/Button";
 function Header() {
   return (
     <>
-      <header className={styles.header}>
+      <header className={`${styles.header} w-100`}>
         <Container>
           <Row>
             <Col>
@@ -41,9 +41,7 @@ function Header() {
                   </li>
 
                   <li className={`${styles.item}`}>
-                    <Button
-                      className={`${styles["sign-up-btn"]} h-100`}
-                    >
+                    <Button className={`${styles["sign-up-btn"]} h-100`}>
                       立即報名
                     </Button>
                   </li>

@@ -7,7 +7,7 @@ import bounty from "assets/bounty.svg";
 import mouseMiddleBtn from "assets/mouse-middle-button.svg";
 import mouseBody from "assets/mouse-body.svg";
 
-function Main() {
+function Main(props) {
   return (
     <>
       <section className={`${styles.main} d-flex align-items-center`}>
@@ -66,6 +66,7 @@ function Main() {
                       <span>$10,000</span>
                     </h5>
                     <img
+                      style={{ bottom: `${props.vHackerBottom}px` }}
                       src={vHacker}
                       alt={"v-hacker"}
                       className={`${styles["v-hacker"]} position-absolute`}

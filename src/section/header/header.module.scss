@@ -1,6 +1,8 @@
 @import "breakpoints.scss";
 
 .header {
+  position: fixed;
+  z-index: 5000;
   padding: 13.5px 0px;
   background-color: var(--bs-main);
 }
