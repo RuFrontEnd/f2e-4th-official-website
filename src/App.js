@@ -28,54 +28,71 @@ function App() {
     </div>
   );
 
-  React.useEffect(() => {
-    const scroll = () => {
-      const currentScrollTop = document.documentElement.scrollTop;
-      const direction = currentScrollTop > prevScrollTop;
+  // React.useEffect(() => {
+  //   const scroll = () => {
+  //     const currentScrollTop = document.documentElement.scrollTop;
+  //     const direction = currentScrollTop > prevScrollTop;
 
-      if (direction && vHackerBottom < -30) {
-        setVHackerBottom((vHackerBottom) => (vHackerBottom += 10));
-      } else if (!direction && vHackerBottom > -530) {
-        setVHackerBottom((vHackerBottom) => (vHackerBottom -= 10));
-      }
+  //     console.log("direction", direction);
+  //     console.log("vHackerBottom", vHackerBottom);
 
-      setPrevScrollTop(currentScrollTop);
-      setParallax(currentScrollTop >= 3000);
-    };
+  //     console.log("currentScrollTop", currentScrollTop);
 
-    document.addEventListener("scroll", scroll);
+  //     if (direction && vHackerBottom < -30 && currentScrollTop <= 1000) {
+  //       setVHackerBottom((vHackerBottom) => (vHackerBottom += 10));
+  //     } else if (
+  //       !direction &&
+  //       vHackerBottom > -530 &&
+  //       currentScrollTop <= 1000
+  //     ) {
+  //       setVHackerBottom((vHackerBottom) => (vHackerBottom -= 10));
+  //     }
 
-    return () => {
-      document.removeEventListener("scroll", scroll);
-    };
-  }, [prevScrollTop]);
+  //     setPrevScrollTop(currentScrollTop);
+  //     setParallax(currentScrollTop >= 3000);
+  //   };
+
+  //   document.addEventListener("scroll", scroll);
+
+  //   return () => {
+  //     document.removeEventListener("scroll", scroll);
+  //   };
+  // }, [prevScrollTop]);
 
   return (
     <>
       <Header />
       <div
         style={{
-          // height: "3000px",
-          zIndex: "1000",
-          position: "fixed",
-          // opacity: "0.5",
-          display: parallax ? "none" : "block",
+          position: "sticky",
+          top: "0",
+          zIndex: "100",
         }}
-        className="w-100"
       >
-        {picture}
+        <div
+          style={{
+            height: "6523px",
+          }}
+        >
+          <div
+            style={{
+              height: "100vh",
+              overflow: "hidden",
+            }}
+          >
+            {picture}
+          </div>
+        </div>
       </div>
 
       <div
         style={{
-          height: "3000px",
+          position: "sticky",
+          top: "0",
         }}
-        className="w-100"
       >
-        123
+        {picture}
       </div>
-
-      {picture}
     </>
   );
 }
