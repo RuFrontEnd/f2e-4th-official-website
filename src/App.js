@@ -14,20 +14,6 @@ function App() {
   const [parallax, setParallax] = React.useState(false);
   const [vHackerBottom, setVHackerBottom] = React.useState(-530);
 
-  const picture = (
-    <div className={styles.picture}>
-      <Main vHackerBottom={vHackerBottom} />
-      <div className={styles.detail}>
-        <Topic />
-        <Time />
-        <Reward />
-        <Share />
-        <Footer />
-        <Coder />
-      </div>
-    </div>
-  );
-
   // React.useEffect(() => {
   //   const scroll = () => {
   //     const currentScrollTop = document.documentElement.scrollTop;
@@ -62,36 +48,16 @@ function App() {
   return (
     <>
       <Header />
-      <div
-        style={{
-          position: "sticky",
-          top: "0",
-          zIndex: "100",
-        }}
-      >
-        <div
-          style={{
-            height: "6523px",
-          }}
-        >
-          <div
-            style={{
-              height: "100vh",
-              overflow: "hidden",
-            }}
-          >
-            {picture}
-          </div>
+      <div className={styles.picture}>
+        <Main vHackerBottom={vHackerBottom} />
+        <div className={styles.detail}>
+          <Topic />
+          <Time />
+          <Reward />
+          <Share />
+          <Footer />
+          <Coder />
         </div>
-      </div>
-
-      <div
-        style={{
-          position: "sticky",
-          top: "0",
-        }}
-      >
-        {picture}
       </div>
     </>
   );

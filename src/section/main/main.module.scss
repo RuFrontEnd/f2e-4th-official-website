@@ -1,8 +1,15 @@
 @import "breakpoints.scss";
 
+.parallax {
+  height: 3000px;
+}
+
 .main {
   background: no-repeat center url(/assets/paper-bg.png);
   background-size: cover;
+  padding-top: 70px;
+  height: 500px;
+  height: calc(100vh);
 }
 
 .content-container {
