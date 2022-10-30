@@ -45,20 +45,33 @@ function App() {
   //   };
   // }, [prevScrollTop]);
 
+  const content = (
+    <div className={styles.picture}>
+      <Main vHackerBottom={vHackerBottom} />
+      <div className={styles.detail}>
+        <Topic />
+        <Time />
+        <Reward />
+        <Share />
+        <Footer />
+        <Coder />
+      </div>
+    </div>
+  );
+
   return (
     <>
       <Header />
-      <div className={styles.picture}>
-        <Main vHackerBottom={vHackerBottom} />
-        <div className={styles.detail}>
-          <Topic />
-          <Time />
-          <Reward />
-          <Share />
-          <Footer />
-          <Coder />
+
+      <div className={styles["scroll-area"]}>
+        <div className={`position-sticky top-0 ${styles["sticky-area"]}`}>
+          <div className={`${styles["sticky-content"]} overflow-y-hidden`}>
+            {content}
+          </div>
         </div>
       </div>
+
+      <div className={styles.content}>{content}</div>
     </>
   );
 }

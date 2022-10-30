@@ -8,6 +8,13 @@ $utilities: (
       scroll: scroll,
     ),
   ),
+  "overflow-y": (
+    property: overflow-y,
+    responsive: true,
+    values: (
+      hidden: hidden,
+    ),
+  ),
 );
 
 $grid-gutter-width: 1.25rem;

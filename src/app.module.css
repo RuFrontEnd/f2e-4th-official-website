@@ -1,7 +1,23 @@
 .picture {
-
+  padding-top: 70px;
 }
 
 .detail {
   background: url(assets/old-paper.png);
+}
+
+.scroll-area {
+  height: 4000px;
+}
+
+.sticky-area {
+  z-index: 100;
+}
+
+.sticky-content {
+  height: 100vh;
+}
+
+.content {
+  transform: translateY(-100vh);
 }
