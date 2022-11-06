@@ -10,16 +10,22 @@ import Share from "section/share/Share";
 import Footer from "section/footer/Footer";
 import Coder from "section/coder/Coder";
 import paperTop from "assets/paper-top.png";
+import paperLeft from "assets/paper-left.png";
+import paperRight from "assets/paper-right.png";
 
 function App() {
   const [windowScrollY, setWindowScrollY] = React.useState(0),
     [vHackerBottom, setVHackerBottom] = React.useState(-530),
-    [topPaperTop, setTopPaperTop] = React.useState(0);
+    [topPaperTop, setTopPaperTop] = React.useState(0),
+    [leftPaperBottom, setLeftPaperBottom] = React.useState(-20),
+    [rightPaperBottom, setRightPaperBottom] = React.useState(-20);
 
   const handle = (e) => {
     const currentTargetScrollY = e.currentTarget.scrollY;
     return _.throttle(() => {
-      setTopPaperTop((currentTargetScrollY * -1) / 2);
+      setTopPaperTop((currentTargetScrollY * -1) / 20);
+      setLeftPaperBottom((currentTargetScrollY * -1) / 20);
+      setRightPaperBottom((currentTargetScrollY * -1) / 20);
     }, 50)();
   };
 
@@ -33,15 +39,48 @@ function App() {
   return (
     <>
       <Header />
-      <img
-        src={paperTop}
-        alt="paper-top"
-        style={{ top: `${topPaperTop}px` }}
-        className={` ${styles["paper-top"]} position-fixed w-100`}
-      ></img>
+      <div
+        className="d-flex justify-content-center position-fixed w-100 h-100"
+        style={{ zIndex: 100000 }}
+      >
+        <div
+          className={styles.a}
+          style={{
+            width: "100vw",
+            height: "100vh",
+            // background: "red",
+            position: "fixed",
+            top: `${topPaperTop}%`,
+            zIndex: "20000",
+            // opacity: "0.25",
+          }}
+        ></div>
+        <div
+          className={styles.b}
+          style={{
+            width: "80vw",
+            height: "100vh",
+            position: "fixed",
+            left: "-20%",
+            bottom: `${leftPaperBottom}%`,
+            zIndex: "30000",
+          }}
+        ></div>
+        <div
+          className={styles.c}
+          style={{
+            width: "95vw",
+            height: "100vh",
+            position: "fixed",
+            right: "-20%",
+            bottom: `${rightPaperBottom}%`,
+            zIndex: "10000",
+          }}
+        ></div>
+      </div>
 
       <div className={`${styles["scroll-area"]}`}>
-        <div className={` position-sticky top-0 ${styles["sticky-area"]}`}>
+        <div className={`position-sticky top-0 ${styles["sticky-area"]}`}>
           <div className={`overflow-y-hidden`}>
             <Main vHackerBottom={vHackerBottom} />
           </div>

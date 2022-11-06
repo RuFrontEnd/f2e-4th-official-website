@@ -7,8 +7,20 @@
 }
 
 .paper-top {
-  top: 0;
+  z-index: 20000;
+  /* width: 1920px; */
+  width: 100vw;
+  height: 100vh;
+}
+
+.paper-left {
+  z-index: 30000;
+  width: 77vw;
+}
+
+.paper-right {
   z-index: 10000;
+  width: 95vw;
 }
 
 .scroll-area {
@@ -17,4 +29,22 @@
 
 .sticky-area {
   z-index: 100;
+}
+
+.a {
+  background: url("assets/paper-top.png") no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.b {
+  background: url("assets/paper-left.png") no-repeat;
+  background-position: right top;
+  background-size: cover;
+}
+
+.c {
+  background: url("assets/paper-right.png") no-repeat;
+  background-position: left top;
+  background-size: cover;
 }
