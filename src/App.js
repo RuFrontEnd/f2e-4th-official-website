@@ -12,61 +12,14 @@ import Coder from "section/coder/Coder";
 import paperTop from "assets/paper-top.png";
 
 function App() {
-  const [prevScrollTop, setPrevScrollTop] = React.useState(null),
-    [windowScrollY, setWindowScrollY] = React.useState(0),
-    [parallax, setParallax] = React.useState(false),
+  const [windowScrollY, setWindowScrollY] = React.useState(0),
     [vHackerBottom, setVHackerBottom] = React.useState(-530),
     [topPaperTop, setTopPaperTop] = React.useState(0);
-
-  // React.useEffect(() => {
-  //   const scroll = () => {
-  //     const currentScrollTop = document.documentElement.scrollTop;
-  //     const direction = currentScrollTop > prevScrollTop;
-
-  //     console.log("direction", direction);
-  //     console.log("vHackerBottom", vHackerBottom);
-
-  //     console.log("currentScrollTop", currentScrollTop);
-
-  //     if (direction && vHackerBottom < -30 && currentScrollTop <= 1000) {
-  //       setVHackerBottom((vHackerBottom) => (vHackerBottom += 10));
-  //     } else if (
-  //       !direction &&
-  //       vHackerBottom > -530 &&
-  //       currentScrollTop <= 1000
-  //     ) {
-  //       setVHackerBottom((vHackerBottom) => (vHackerBottom -= 10));
-  //     }
-
-  //     setPrevScrollTop(currentScrollTop);
-  //     setParallax(currentScrollTop >= 3000);
-  //   };
-
-  //   document.addEventListener("scroll", scroll);
-
-  //   return () => {
-  //     document.removeEventListener("scroll", scroll);
-  //   };
-  // }, [prevScrollTop]);
-
-  const content = (
-    <div className={styles.picture}>
-      <Main vHackerBottom={vHackerBottom} />
-      <div className={styles.detail}>
-        <Topic />
-        <Time />
-        <Reward />
-        <Share />
-        <Footer />
-        <Coder />
-      </div>
-    </div>
-  );
 
   const handle = (e) => {
     const currentTargetScrollY = e.currentTarget.scrollY;
     return _.throttle(() => {
-      setTopPaperTop((currentTargetScrollY * -1) / 5);
+      setTopPaperTop((currentTargetScrollY * -1) / 2);
     }, 50)();
   };
 
@@ -88,14 +41,21 @@ function App() {
       ></img>
 
       <div className={`${styles["scroll-area"]}`}>
-        <div className={`position-sticky top-0 ${styles["sticky-area"]}`}>
-          <div className={`${styles["sticky-content"]} overflow-y-hidden`}>
-            {content}
+        <div className={` position-sticky top-0 ${styles["sticky-area"]}`}>
+          <div className={`overflow-y-hidden`}>
+            <Main vHackerBottom={vHackerBottom} />
           </div>
         </div>
       </div>
 
-      <div className={styles.content}>{content}</div>
+      <div className={styles.detail}>
+        <Topic />
+        <Time />
+        <Reward />
+        <Share />
+        <Footer />
+        <Coder />
+      </div>
     </>
   );
 }
