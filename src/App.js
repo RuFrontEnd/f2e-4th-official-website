@@ -16,7 +16,7 @@ import paperRight from "assets/paper-right.png";
 function App() {
   const [windowScrollY, setWindowScrollY] = React.useState(0),
     [vHackerBottom, setVHackerBottom] = React.useState(-530),
-    [topPaperTop, setTopPaperTop] = React.useState(0),
+    [topPaperTop, setTopPaperTop] = React.useState(-0),
     [leftPaperBottom, setLeftPaperBottom] = React.useState(-20),
     [rightPaperBottom, setRightPaperBottom] = React.useState(-20);
 
@@ -48,6 +48,7 @@ function App() {
           style={{
             width: "100vw",
             height: "100vh",
+            minHeight: "800px",
             // background: "red",
             position: "fixed",
             top: `${topPaperTop}%`,

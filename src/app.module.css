@@ -33,7 +33,7 @@
 
 .a {
   background: url("assets/paper-top.png") no-repeat;
-  background-position: center top;
+  background-position: center bottom;
   background-size: cover;
 }
 
