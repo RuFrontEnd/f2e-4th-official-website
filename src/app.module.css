@@ -6,6 +6,11 @@
   background: url(assets/old-paper.png);
 }
 
+.paper-top{
+  top: 0;
+  z-index: 10000;
+}
+
 .scroll-area {
   height: 4000px;
 }
