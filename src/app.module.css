@@ -8,7 +8,6 @@
 
 .paper-top {
   z-index: 20000;
-  /* width: 1920px; */
   width: 100vw;
   height: 100vh;
 }
@@ -24,30 +23,17 @@
 }
 
 .scroll-area {
-  height: 4000px;
+  height: 5000px;
 }
 
 .sticky-area {
   z-index: 100;
 }
 
-.a {
+.paper-top {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 20000;
   object-fit: cover;
-  /* background: url("assets/paper-top.png") no-repeat; */
-  /* background-position: center bottom; */
-  /* background-size: cover; */
-}
-
-.b {
-  object-fit: cover;
-  /* background: url("assets/paper-left.png") no-repeat; */
-  /* background-position: right top; */
-  /* background-size: cover; */
-}
-
-.c {
-  object-fit: cover;
-  /* background: url("assets/paper-right.png") no-repeat; */
-  /* background-position: left top; */
-  /* background-size: cover; */
 }

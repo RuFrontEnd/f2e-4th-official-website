@@ -15,17 +15,33 @@ import paperRight from "assets/paper-right.png";
 
 function App() {
   const [windowScrollY, setWindowScrollY] = React.useState(0),
-    [vHackerBottom, setVHackerBottom] = React.useState(-530),
+    [vHackerBottom, setVHackerBottom] = React.useState(window.scrollY),
     [topPaperTop, setTopPaperTop] = React.useState(0),
     [leftPaperBottom, setLeftPaperBottom] = React.useState(0),
     [rightPaperBottom, setRightPaperBottom] = React.useState(0);
 
   const handle = (e) => {
-    const currentTargetScrollY = e.currentTarget.scrollY;
     return _.throttle(() => {
-      setTopPaperTop((currentTargetScrollY * -1) / 30);
-      setLeftPaperBottom((currentTargetScrollY * -1) / 20);
-      setRightPaperBottom((currentTargetScrollY * -1) / 40);
+      const currentTargetScrollY = e.currentTarget.scrollY,
+        maxVhackerBottom = 500,
+        vHackerStartMovingScrollY = 800,
+        vHackerSpeed = 1 / 2;
+
+      console.log("currentTargetScrollY", currentTargetScrollY);
+
+      setTopPaperTop((currentTargetScrollY * -1) / 37.5);
+      setLeftPaperBottom((currentTargetScrollY * -1) / 42.5);
+      setRightPaperBottom((currentTargetScrollY * -1) / 32.5);
+      if (currentTargetScrollY >= vHackerStartMovingScrollY) {
+        setVHackerBottom(
+          (currentTargetScrollY - vHackerStartMovingScrollY) * vHackerSpeed
+        );
+      }
+      if (
+        currentTargetScrollY >=
+        maxVhackerBottom / vHackerSpeed + vHackerStartMovingScrollY
+      )
+        return setVHackerBottom(maxVhackerBottom);
     }, 50)();
   };
 
@@ -45,16 +61,9 @@ function App() {
       >
         <img
           src={paperTop}
-          className={styles.a}
+          className={styles["paper-top"]}
           style={{
-            width: "100vw",
-            height: "100vh",
-            // minHeight: "800px",
-            // background: "red",
-            position: "fixed",
             top: `${topPaperTop}%`,
-            zIndex: "20000",
-            // opacity: "0.25",
           }}
         ></img>
         <img
