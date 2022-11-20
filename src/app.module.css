@@ -28,6 +28,19 @@
   position: fixed;
   width: 100vw;
   height: 100vh;
-  z-index: 20000;
   object-fit: cover;
+}
+
+.paper-top {
+  z-index: 20000;
+}
+
+.paper-left {
+  z-index: 30000;
+  left: 0;
+}
+
+.paper-right {
+  z-index: 10000;
+  right: 0;
 }

@@ -61,33 +61,23 @@ function App() {
       >
         <img
           src={paperTop}
-          className={`${styles["paper"]}`}
+          className={`${styles["paper"]} ${styles["paper-top"]}`}
           style={{
             top: `${topPaperTop}%`,
           }}
         ></img>
         <img
           src={paperLeft}
-          className={`${styles["paper"]}`}
+          className={`${styles["paper"]} ${styles["paper-left"]}`}
           style={{
-            width: "100%",
-            height: "100%",
-            position: "fixed",
-            left: "0",
             bottom: `${leftPaperBottom}%`,
-            zIndex: "30000",
           }}
         ></img>
         <img
           src={paperRight}
-          className={`${styles["paper"]}`}
+          className={`${styles["paper"]} ${styles["paper-right"]}`}
           style={{
-            width: "100vw",
-            height: "100vh",
-            position: "fixed",
-            right: "0%",
             bottom: `${rightPaperBottom}%`,
-            zIndex: "10000",
           }}
         ></img>
       </div>
