@@ -6,12 +6,6 @@
   background: url(assets/old-paper.png);
 }
 
-.paper-top {
-  z-index: 20000;
-  width: 100vw;
-  height: 100vh;
-}
-
 .paper-left {
   z-index: 30000;
   width: 77vw;
@@ -30,7 +24,7 @@
   z-index: 100;
 }
 
-.paper-top {
+.paper {
   position: fixed;
   width: 100vw;
   height: 100vh;

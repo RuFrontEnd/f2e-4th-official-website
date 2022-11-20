@@ -61,14 +61,14 @@ function App() {
       >
         <img
           src={paperTop}
-          className={styles["paper-top"]}
+          className={`${styles["paper"]}`}
           style={{
             top: `${topPaperTop}%`,
           }}
         ></img>
         <img
           src={paperLeft}
-          className={styles.b}
+          className={`${styles["paper"]}`}
           style={{
             width: "100%",
             height: "100%",
@@ -80,7 +80,7 @@ function App() {
         ></img>
         <img
           src={paperRight}
-          className={styles.c}
+          className={`${styles["paper"]}`}
           style={{
             width: "100vw",
             height: "100vh",
