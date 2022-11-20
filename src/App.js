@@ -52,6 +52,7 @@ function App() {
 
   return (
     <>
+      {/* TODO: navbar rwd 須修正 */}
       <Header />
       {/* <div
         className={`d-flex justify-content-center position-fixed w-100 h-100 ${styles.papers}`}
