@@ -7,12 +7,13 @@ import vHacker from "assets/v-hacker.svg";
 import bounty from "assets/bounty.svg";
 import mouseMiddleBtn from "assets/mouse-middle-button.svg";
 import mouseBody from "assets/mouse-body.svg";
+import NavHeight from "components/navHeight/NavHeight";
 
 const Main = React.forwardRef((props, ref) => {
-  
   return (
     <>
-      <section className={`${styles.main} d-flex align-items-center`} ref={ref}>
+      <section className={`${styles.main}`} ref={ref}>
+        <NavHeight />
         <Container>
           <Row>
             <Col>

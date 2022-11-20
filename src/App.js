@@ -27,8 +27,6 @@ function App() {
         vHackerStartMovingScrollY = 800,
         vHackerSpeed = 1 / 2;
 
-      console.log("currentTargetScrollY", currentTargetScrollY);
-
       setTopPaperTop((currentTargetScrollY * -1) / 37.5);
       setLeftPaperBottom((currentTargetScrollY * -1) / 42.5);
       setRightPaperBottom((currentTargetScrollY * -1) / 32.5);
@@ -42,7 +40,7 @@ function App() {
         maxVhackerBottom / vHackerSpeed + vHackerStartMovingScrollY
       )
         return setVHackerBottom(maxVhackerBottom);
-    }, 50)();
+    }, 100)();
   };
 
   React.useEffect(() => {
@@ -55,7 +53,7 @@ function App() {
   return (
     <>
       <Header />
-      <div
+      {/* <div
         className={`d-flex justify-content-center position-fixed w-100 h-100 ${styles.papers}`}
       >
         <img
@@ -79,24 +77,24 @@ function App() {
             bottom: `${rightPaperBottom}%`,
           }}
         ></img>
-      </div>
+      </div> */}
 
-      <div className={`${styles["scroll-area"]}`}>
+      {/* <div className={`${styles["scroll-area"]}`}>
         <div className={`position-sticky top-0 ${styles["sticky-area"]}`}>
           <div className={`overflow-y-hidden`}>
             <Main vHackerBottom={vHackerBottom} />
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className={styles.detail}>
+      {/* <div className={styles.detail}>
         <Topic />
         <Time />
         <Reward />
         <Share />
         <Footer />
         <Coder />
-      </div>
+      </div> */}
     </>
   );
 }

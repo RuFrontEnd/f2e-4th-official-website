@@ -7,7 +7,9 @@
 }
 
 .content-container {
-  padding: 14px 0px 0px 0px;
+  box-sizing: content-box;
+  // padding-top: calc((100vh - 597px - 70px) / 2);
+  // padding-bottom: calc((100vh - 597px - 70px) / 2);
 }
 
 .content {
@@ -23,6 +25,7 @@
 
 .copywritings {
   padding: 50px;
+  flex-direction: column;
 }
 
 .F2E {
@@ -77,7 +80,6 @@
 }
 
 .num-of-person {
-  margin-right: 40px;
 }
 
 .num-of-person > h4 {
@@ -150,22 +152,32 @@
 
 @media screen and (min-width: $md) {
   .content-container {
-    padding: 28px 0px 32px 0px;
+    padding: 30px;
   }
 
   .content {
     background-image: url(/assets/mottlement-bg-md.png);
     aspect-ratio: 1 / 1.22554347826;
   }
+
+  .copywritings {
+    flex-direction: column;
+  }
 }
 
 @media screen and (min-width: $lg) {
   .content-container {
-    padding: 40px 0px 20px 0px;
+    box-sizing: content-box;
+    padding-top: calc((100vh - 597px - 35px) / 2);
+    padding-bottom: calc((100vh - 597px - 35px) / 2);
   }
 
   .content {
     background-image: url(/assets/mottlement-bg-lg.png);
     aspect-ratio: 1 / 0.4975;
+  }
+
+  .copywritings {
+    flex-direction: row;
   }
 }
