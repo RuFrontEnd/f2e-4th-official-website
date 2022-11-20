@@ -56,8 +56,7 @@ function App() {
     <>
       <Header />
       <div
-        className="d-flex justify-content-center position-fixed w-100 h-100"
-        style={{ zIndex: 100000 }}
+        className={`d-flex justify-content-center position-fixed w-100 h-100 ${styles.papers}`}
       >
         <img
           src={paperTop}

@@ -44,3 +44,7 @@
   z-index: 10000;
   right: 0;
 }
+
+.papers {
+  z-index: 100000;
+}
