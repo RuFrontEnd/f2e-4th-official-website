@@ -16,16 +16,16 @@ import paperRight from "assets/paper-right.png";
 function App() {
   const [windowScrollY, setWindowScrollY] = React.useState(0),
     [vHackerBottom, setVHackerBottom] = React.useState(-530),
-    [topPaperTop, setTopPaperTop] = React.useState(-0),
-    [leftPaperBottom, setLeftPaperBottom] = React.useState(-20),
-    [rightPaperBottom, setRightPaperBottom] = React.useState(-20);
+    [topPaperTop, setTopPaperTop] = React.useState(0),
+    [leftPaperBottom, setLeftPaperBottom] = React.useState(0),
+    [rightPaperBottom, setRightPaperBottom] = React.useState(0);
 
   const handle = (e) => {
     const currentTargetScrollY = e.currentTarget.scrollY;
     return _.throttle(() => {
-      setTopPaperTop((currentTargetScrollY * -1) / 20);
+      setTopPaperTop((currentTargetScrollY * -1) / 30);
       setLeftPaperBottom((currentTargetScrollY * -1) / 20);
-      setRightPaperBottom((currentTargetScrollY * -1) / 20);
+      setRightPaperBottom((currentTargetScrollY * -1) / 40);
     }, 50)();
   };
 
@@ -43,41 +43,44 @@ function App() {
         className="d-flex justify-content-center position-fixed w-100 h-100"
         style={{ zIndex: 100000 }}
       >
-        <div
+        <img
+          src={paperTop}
           className={styles.a}
           style={{
             width: "100vw",
             height: "100vh",
-            minHeight: "800px",
+            // minHeight: "800px",
             // background: "red",
             position: "fixed",
             top: `${topPaperTop}%`,
             zIndex: "20000",
             // opacity: "0.25",
           }}
-        ></div>
-        <div
+        ></img>
+        <img
+          src={paperLeft}
           className={styles.b}
           style={{
-            width: "80vw",
-            height: "100vh",
+            width: "100%",
+            height: "100%",
             position: "fixed",
-            left: "-20%",
+            left: "0",
             bottom: `${leftPaperBottom}%`,
             zIndex: "30000",
           }}
-        ></div>
-        <div
+        ></img>
+        <img
+          src={paperRight}
           className={styles.c}
           style={{
-            width: "95vw",
+            width: "100vw",
             height: "100vh",
             position: "fixed",
-            right: "-20%",
+            right: "0%",
             bottom: `${rightPaperBottom}%`,
             zIndex: "10000",
           }}
-        ></div>
+        ></img>
       </div>
 
       <div className={`${styles["scroll-area"]}`}>

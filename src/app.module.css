@@ -32,19 +32,22 @@
 }
 
 .a {
-  background: url("assets/paper-top.png") no-repeat;
-  background-position: center bottom;
-  background-size: cover;
+  object-fit: cover;
+  /* background: url("assets/paper-top.png") no-repeat; */
+  /* background-position: center bottom; */
+  /* background-size: cover; */
 }
 
 .b {
-  background: url("assets/paper-left.png") no-repeat;
-  background-position: right top;
-  background-size: cover;
+  object-fit: cover;
+  /* background: url("assets/paper-left.png") no-repeat; */
+  /* background-position: right top; */
+  /* background-size: cover; */
 }
 
 .c {
-  background: url("assets/paper-right.png") no-repeat;
-  background-position: left top;
-  background-size: cover;
+  object-fit: cover;
+  /* background: url("assets/paper-right.png") no-repeat; */
+  /* background-position: left top; */
+  /* background-size: cover; */
 }
