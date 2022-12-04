@@ -29,7 +29,7 @@ const Main = React.forwardRef((props, ref) => {
                       height={530}
                     ></img>
                     <div className={`${styles.copywritings} h-100 d-grid`}>
-                      <div className="d-flex flex-column justify-content-between">
+                      <div className="d-flex flex-column justify-content-lg-between justify-content-md-start">
                         <h1
                           className={`${styles.F2E} d-flex align-items-center`}
                         >
@@ -55,7 +55,7 @@ const Main = React.forwardRef((props, ref) => {
                         </h3>
                       </div>
                       <div
-                        className={`d-flex flex-column justify-content-center`}
+                        className={`d-flex flex-column justify-content-center d-md-none d-md-none`}
                       >
                         <div className={`${styles["num-of-person"]}`}>
                           <h4>

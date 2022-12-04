@@ -77,10 +77,6 @@
   grid-column: 1 / 5;
 }
 
-.copywritings > div:nth-child(3) > h5 {
-  transform: translateX(56px);
-}
-
 .copywritings > div:nth-child(3) > h5 > span {
   font-size: 56px;
   font-family: AR JULIAN;
@@ -167,12 +163,26 @@
   }
 
   .copywritings {
-    padding: 93px 39px;
+    padding: 93px 39px 30px;
+  }
+
+  .copywritings > div:nth-child(1) {
+    grid-column: 1 / 5;
   }
 
   .bounty {
     width: 310px;
     height: 180px;
+  }
+
+  .copywritings > div:nth-child(3) > h5 {
+    transform: translateX(0px);
+  }
+
+  .v-hacker {
+    bottom: -1%;
+    left: 36px;
+    transform: translateY(530px);
   }
 }
 
@@ -207,10 +217,20 @@
     font-family: AR JULIAN;
   }
 
+  .copywritings > div:nth-child(3) > h5 {
+    transform: translateX(56px);
+  }
+
   .copywritings > div:nth-child(3) > span {
     z-index: 100;
     font-size: 56px;
     font-family: AR JULIAN;
     color: var(--bs-vice);
+  }
+
+  .v-hacker {
+    bottom: -1%;
+    left: 326px;
+    transform: translateY(530px);
   }
 }
