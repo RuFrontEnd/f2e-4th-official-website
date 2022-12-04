@@ -20,23 +20,31 @@ const Main = React.forwardRef((props, ref) => {
               <div className={`${styles["content-container"]}`}>
                 <div className={"position-relative"}>
                   <div className={`${styles.content}`}>
-                    <div
-                      className={`${styles.copywritings} h-100 d-flex justify-content-between`}
-                    >
-                      <div>
+                    <img
+                      style={{ bottom: `${props.vHackerBottom}px` }}
+                      src={vHacker}
+                      alt={"v-hacker"}
+                      className={`${styles["v-hacker"]} position-absolute`}
+                      width={630}
+                      height={530}
+                    ></img>
+                    <div className={`${styles.copywritings} h-100 d-grid`}>
+                      <div className="d-flex flex-column justify-content-between">
                         <h1
                           className={`${styles.F2E} d-flex align-items-center`}
                         >
                           THE F2E<div>4th</div>
                         </h1>
-                        <h2 className={`${styles.copywriting} mb-3`}>
+                        <h2 className={`${styles.copywriting}`}>
                           前端工程師和介面
-                          <br />
+                          <br className="d-md-none d-lg-block" />
                           設計師, 攜手合作
-                          <br />
+                          <br className="d-md-none d-lg-block" />
                           拿獎金
                         </h2>
-                        <h3 className={`${styles["vice-copywriting"]}`}>
+                        <h3
+                          className={`${styles["vice-copywriting"]} d-md-none  d-lg-block`}
+                        >
                           羨慕別人的酷酷網頁動
                           <br />
                           畫？ 滿足不了同事的許
@@ -47,7 +55,7 @@ const Main = React.forwardRef((props, ref) => {
                         </h3>
                       </div>
                       <div
-                        className={`${styles["num-of-person-wrapper"]} d-flex justify-content-end align-items-center h-100`}
+                        className={`d-flex flex-column justify-content-center`}
                       >
                         <div className={`${styles["num-of-person"]}`}>
                           <h4>
@@ -61,21 +69,13 @@ const Main = React.forwardRef((props, ref) => {
                           </h4>
                         </div>
                       </div>
+                      <div>
+                        <h5 className={`text-center`}>
+                          個人獎<span>$3,000</span>&nbsp;&nbsp;團體獎
+                          <span>$10,000</span>
+                        </h5>
+                      </div>
                     </div>
-                    <h5
-                      className={`${styles.bonus} position-absolute text-center`}
-                    >
-                      個人獎<span>$3,000</span>&nbsp;&nbsp;團體獎
-                      <span>$10,000</span>
-                    </h5>
-                    <img
-                      style={{ bottom: `${props.vHackerBottom}px` }}
-                      src={vHacker}
-                      alt={"v-hacker"}
-                      className={`${styles["v-hacker"]} position-absolute`}
-                      width={630}
-                      height={530}
-                    ></img>
                   </div>
                   <img
                     src={bounty}

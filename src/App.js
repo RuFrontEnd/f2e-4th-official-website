@@ -52,7 +52,6 @@ function App() {
 
   return (
     <>
-      {/* TODO: navbar rwd 須修正 */}
       <Header />
       {/* <div
         className={`d-flex justify-content-center position-fixed w-100 h-100 ${styles.papers}`}
@@ -80,13 +79,13 @@ function App() {
         ></img>
       </div> */}
 
-      {/* <div className={`${styles["scroll-area"]}`}>
+      <div className={`${styles["scroll-area"]}`}>
         <div className={`position-sticky top-0 ${styles["sticky-area"]}`}>
           <div className={`overflow-y-hidden`}>
             <Main vHackerBottom={vHackerBottom} />
           </div>
         </div>
-      </div> */}
+      </div>
 
       {/* <div className={styles.detail}>
         <Topic />

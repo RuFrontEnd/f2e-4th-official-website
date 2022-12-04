@@ -20,19 +20,22 @@
   background-size: contain;
   position: relative;
   overflow: hidden;
-  transition: 0.5s;
 }
 
 .copywritings {
   padding: 50px;
-  flex-direction: column;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr auto;
+}
+
+.copywritings > div:nth-child(1) {
+  grid-column: 1 / 4;
 }
 
 .F2E {
   font-family: AR JULIAN;
   font-size: 80px;
   color: var(--bs-main);
-  margin-bottom: 36px;
 }
 
 .F2E > div {
@@ -67,19 +70,38 @@
   transform: translateY(530px);
 }
 
+.copywritings > div:nth-child(3) {
+  color: var(--bs-text);
+  font-size: 28px;
+  font-family: AR JULIAN;
+  grid-column: 1 / 5;
+}
+
+.copywritings > div:nth-child(3) > h5 {
+  transform: translateX(56px);
+}
+
+.copywritings > div:nth-child(3) > h5 > span {
+  font-size: 56px;
+  font-family: AR JULIAN;
+  color: var(--bs-vice);
+}
+
 .bounty {
   top: 0;
   right: 0;
   transform: translate(20px, -20px);
 }
 
-.num-of-person-wrapper {
+.copywritings > div:nth-child(2) {
+  grid-column: 4 / 5;
   color: var(--bs-main);
   font-size: 28px;
   font-family: AR JULIAN;
 }
 
 .num-of-person {
+  transform: translateY(28px);
 }
 
 .num-of-person > h4 {
@@ -88,22 +110,6 @@
 
 .num-of-person > h4 > span {
   font-size: 50px;
-}
-
-.bonus {
-  z-index: 100;
-  color: var(--bs-text);
-  font-size: 28px;
-  font-family: AR JULIAN;
-  bottom: 20px;
-  left: 360px;
-}
-
-.bonus > span {
-  z-index: 100;
-  font-size: 56px;
-  font-family: AR JULIAN;
-  color: var(--bs-vice);
 }
 
 .mouse {
@@ -161,7 +167,12 @@
   }
 
   .copywritings {
-    flex-direction: column;
+    padding: 93px 39px;
+  }
+
+  .bounty {
+    width: 310px;
+    height: 180px;
   }
 }
 
@@ -178,6 +189,28 @@
   }
 
   .copywritings {
-    flex-direction: row;
+    padding: 30px 50px;
+  }
+
+  .bounty {
+    width: 340px;
+    height: 210px;
+    top: 0;
+    right: 0;
+    transform: translate(20px, -20px);
+  }
+
+  .copywritings > div:nth-child(3) {
+    z-index: 100;
+    color: var(--bs-text);
+    font-size: 28px;
+    font-family: AR JULIAN;
+  }
+
+  .copywritings > div:nth-child(3) > span {
+    z-index: 100;
+    font-size: 56px;
+    font-family: AR JULIAN;
+    color: var(--bs-vice);
   }
 }

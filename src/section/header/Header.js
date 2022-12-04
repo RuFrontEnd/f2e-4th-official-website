@@ -17,7 +17,7 @@ function Header() {
                 className={`${styles["header-items"]} d-flex justify-content-between`}
               >
                 <div className="d-flex align-items-center h-100">
-                  <Menu className="d-md-none" />
+                  <Menu className="d-md-none" width={43} height={43} />
                   <img
                     src={hexLogo}
                     className={`${styles["hex-logo"]} d-md-block d-none`}
